@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>settings</class>
+ <widget class="QMainWindow" name="settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>878</width>
+    <height>447</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>878</width>
+    <height>447</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>878</width>
+    <height>447</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>settings</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/hr logo.png</normaloff>icons/hr logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(21, 29, 47);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">
+QTabWidget::pane {
+    border-top: 0px solid #C2C7CB;
+}
+QTabWidget::tab-bar {
+    left: 0px; 
+}
+QTabBar::tab {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+    border: 0px solid rgb(0, 0, 0);
+    min-width: 53ex;
+    padding: 09px;
+	color:rgb(255,255,255)
+}
+#frame_54,QProgressBar,QLineEdit{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.243781 rgba(62, 62, 62, 0));
+}
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.243781 rgba(62, 62, 62, 0));
+
+	border-bottom: 4px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 112, 187, 0), stop:0.263682 rgba(0, 112, 187, 255), stop:0.517413 rgba(0, 112, 187, 255), stop:0.766169 rgba(0, 112, 187, 255), stop:1 rgba(0, 112, 187, 0));
+}
+
+ 
+QTabBar::tab:selected {
+    border-color:  qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 112, 187, 0), stop:0.189055 rgba(17, 0, 255, 255), stop:0.517413 rgba(17, 0, 255, 255), stop:0.81592 rgba(17, 0, 255, 255), stop:1 rgba(0, 112, 187, 0));
+}
+QTabBar::tab:!selected {
+    margin-bottom: 4px; 
+}
+QTabBar::tab:selected {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+#frame{
+background-color: rgb(31, 41, 64);
+ border-radius: 5px;
+color:rgb(255,255,255);
+	
+}
+QLabel,QCheckBox{
+
+color: rgb(220, 220, 220);
+}
+
+QComboBox::drop-down {
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+}
+
+#edit{
+border: 2px solid rgb(198, 116, 69);
+color: rgb(220, 220, 220);
+}
+#delete_item{
+border: 2px solid rgb(218, 0, 3);
+color: rgb(220, 220, 220);
+}
+#add_new_item{
+border: 2px solid rgb(45, 208, 0);
+color: rgb(220, 220, 220);
+}
+#edit:pressed , #delete_item:pressed , #add_new_item:pressed{
+color: rgb(255, 255, 255);
+	background-color: rgb(21, 29, 47);
+}
+
+
+
+
+
+
+QLabel,QCheckBox{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.243781 rgba(62, 62, 62, 0));
+}
+
+
+QLineEdit , QPushButton , QToolButton , QListWidget , QListWidget::item ,QComboBox , QPushButton , QDateEdit,QTimeEdit
+,QTextEdit
+{
+padding-left:6px;
+padding-right:6px;
+color:rgb(255,255,255);
+border: 1px solid rgb(48, 64, 99);;
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.243781 rgba(62, 62, 62, 0));
+border-radius: 4px;
+
+}
+
+QComboBox{
+padding-left:6px;
+padding-right:6px;
+color:rgb(255, 255, 255);
+border: 1px solid rgb(48, 64, 99);;
+background-color: rgb(23, 31, 49);
+border-radius: 4px;
+}
+
+
+QListWidget{
+background-color: rgb(23, 31, 49);
+
+}
+
+
+QPushButton , QToolButton,QLineEdit,QDateEdit,QTimeEdit{
+
+border-radius: 10px;}
+
+
+
+
+QScrollBar::sub-page:vertical ,QScrollBar::add-page:vertical{
+background:rgb(24, 32, 49);}
+
+
+QToolButton:pressed,QPushButton:pressed,QListWidget:item {
+padding:1px;
+background-color: rgb(20, 27, 45);}
+
+
+QListWidget {
+padding-top:8px;
+
+}
+ QPushButton , QToolButton{
+
+padding:0px;
+}
+
+
+QScrollBar::handle:vertical,QListWidget:item:hover{
+border-radius: 4px;
+border: 2px solid rgb(164, 190, 217);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.243781 rgba(62, 62, 62, 0));
+}
+
+
+QListWidget::item:selected {
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.243781 rgba(62, 62, 62, 0));
+
+border: 2px solid rgb(17, 0, 255);
+color:rgb(10, 57, 170);
+}
+
+
+
+
+
+
+QToolTip{
+color:rgb(210,210,210);
+background-color:rgb(42, 58, 94);
+border-radius: 7px;
+border: 2px solid rgb(0, 112, 187);
+}
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Constant values</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame">
+          <property name="minimumSize">
+           <size>
+            <width>116</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3" columnstretch="1,1,1,5" columnminimumwidth="1,1,1,5">
+           <item row="2" column="2">
+            <widget class="QPushButton" name="delete_value">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>81</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>81</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Yu Gothic UI Semibold</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Delete</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Value text :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" colspan="2">
+            <widget class="QComboBox" name="comboBox">
+             <item>
+              <property name="text">
+               <string>Gender</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Nationality</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Blood Group</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Section</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Position</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Marital Status</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Work Time</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Military Service</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Driving</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="add_value">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>81</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>81</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Yu Gothic UI Semibold</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Add</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="edit_value">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Edit</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1" colspan="2">
+            <widget class="QLineEdit" name="value_text"/>
+           </item>
+           <item row="0" column="3" rowspan="4">
+            <widget class="QListWidget" name="variables">
+             <property name="font">
+              <font>
+               <family>Yu Gothic UI Semibold</family>
+              </font>
+             </property>
+             <property name="verticalScrollMode">
+              <enum>QAbstractItemView::ScrollPerPixel</enum>
+             </property>
+             <property name="horizontalScrollMode">
+              <enum>QAbstractItemView::ScrollPerPixel</enum>
+             </property>
+             <property name="spacing">
+              <number>1</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>Gender</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Nationality</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Blood Group</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Section</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Position</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Marital Status</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Work Time</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Military Service</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Driving</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
